@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Sriracha&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <title>Recipe for the People, no ketchup allowed</title>
+</head>
+
+<body>
+
+    <div>
+        <input id="input" type="text" placeholder="Ingredients">
+        <button id="btn">SERACH!</button>
+    </div>
+
+    <div id="logos"><img src="dogcooking.jpg"> </div>
+
+
+    <div class="container">
+
+
+    <script id="recipeID" type="text/x-handlebars-template">
+
+        {{#each .}}
+
+        <div class="recipe">
+            <a href="{{href}}">{{title}}</a>
+            <img src="{{thumbnail}}" alt="">
+            <span style="font-family: 'Sriracha', cursive">Ingredients:</span>
+
+            <ul>
+                {{#each ingredients as |item|}}
+                <li style="font-family: 'Dancing Script', cursive">{{item}}</li>
+                {{/each}}
+            </ul>
+        </div>
+
+        {{/each}}
+    </script>
+
+    </div>
+
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

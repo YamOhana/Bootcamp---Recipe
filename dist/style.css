@@ -1,0 +1,19 @@
+#input{
+
+    border-radius: 30px;
+    width: 600px;
+}
+
+.container{
+
+    display: grid;
+    height: 200px;
+    align-content: space-between;
+    grid-template-columns: auto auto ;
+    grid-gap: 5px;
+    padding: 5px;
+
+
+}
+
+
