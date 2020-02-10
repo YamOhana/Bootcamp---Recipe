@@ -4,6 +4,7 @@
     width: 600px;
 }
 
+
 .container{
 
     display: grid;
@@ -20,4 +21,11 @@
 .recipe{
 
     background-color: cornflowerblue;
+}
+
+img{
+
+
+    height: 200px;
+    width: 200;
 }
